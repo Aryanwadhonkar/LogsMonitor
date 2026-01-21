@@ -1,0 +1,55 @@
+nohup: ignoring input
+/home/ubuntu/monitor_project/monitor/server/backend/main.py:35: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [5221]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Connecting to MongoDB at: mongodb://localhost:27017
+⚠️ MongoDB connection failed: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 2.0s, Topology Description: <TopologyDescription id: 6970c2b29a4428c67ba7bc3e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Running in memory-only mode (logs will not be persisted)
+[SERVER] Received log from inventory-api: [DEBUG] Transaction processed
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from payment-gateway: [INFO] Transaction processed
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from inventory-api: [WARNING] New user registered
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from auth-service: [DEBUG] User login successful
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from auth-service: [INFO] High CPU usage detected
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from auth-service: [INFO] Invalid API key provided
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from file-monitor: [ERROR] Initial error
+INFO:     127.0.0.1:58132 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from inventory-api: [DEBUG] User login successful
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from file-monitor: [WARNING] New warning
+INFO:     127.0.0.1:58132 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from payment-gateway: [ERROR] User login successful
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from auth-service: [ERROR] New user registered
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from payment-gateway: [ERROR] Database connection timeout
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from frontend-app: [INFO] Cache cleared
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from inventory-api: [DEBUG] Cache cleared
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from inventory-api: [WARNING] Database connection timeout
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from auth-service: [INFO] Invalid API key provided
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from frontend-app: [ERROR] Invalid API key provided
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from frontend-app: [INFO] Invalid API key provided
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from payment-gateway: [INFO] High CPU usage detected
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK
+[SERVER] Received log from auth-service: [WARNING] Transaction processed
+INFO:     127.0.0.1:58130 - "POST /logs HTTP/1.1" 200 OK

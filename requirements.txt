@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+flask
+pymongo
+motor
+python-dotenv
+pydantic
+requests
